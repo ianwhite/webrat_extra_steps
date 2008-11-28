@@ -12,3 +12,6 @@ So, if you have a page with lots of similar looking text, you can use steps like
 this:
 
   Then within: div.crumbs_bar, I press "Home"
+  
+The generator parses your current webrat_steps.rb to create the steps, so if that file changes
+you might want to re-run the generator
