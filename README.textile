@@ -1,17 +1,19 @@
 h1. Creates some extra handy webrat steps
 
-  # after you've run script/generate cucumber
+After you've run script/generate cucumber, do this:
   
   script/generate extra_webrat_steps
   
 h2. What does it do?
 
-Currently, it just creates dom scoped versions of the 'Then' steps.
+Currently, it just creates dom scoped versions of the 'When' steps.
 
 So, if you have a page with lots of similar looking text, you can use steps like
 this:
 
-  Then within: div.crumbs_bar, I press "Home"
+  When within: div.crumbs_bar, I press "Home"
+  
+  When within: form.enquiry, I select "Website" from "Enquiry type"
   
 The generator parses your current webrat_steps.rb to create the steps, so if that file changes
 you might want to re-run the generator
