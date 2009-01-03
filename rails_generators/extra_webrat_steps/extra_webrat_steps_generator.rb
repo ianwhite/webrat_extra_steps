@@ -3,7 +3,7 @@ class ExtraWebratStepsGenerator < Rails::Generator::Base
   
   def initialize(*args)
     
-    # Added support for the languages cucumber comns with
+    # Added support for the languages cucumber comes with
     # 
     # Load a file languages.yml containing the translations
     # Get the language to use as arg

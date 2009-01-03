@@ -20,15 +20,21 @@ you might want to re-run the generator
 
 h3. Enhancement to support multiple languages
 
+Since Cucumber supports multiple languages, webrat_extra_steps should do so either.
+Add a file languages.yml containing the translations.
+
 It's asumed that the features directory looks as following:
   
     features
-      [language] (any other language cucumber supports)
+      [language] (any language cucumber supports)
         step_definitions
           *_steps.rb
           webrat_steps.rb
         *.feature
+      [language] (multiple languages are supported)
+         *
       support
         env.rb
    
-Use script/generate extra_webrat_steps [language] to generate webrat_extra_steps.rb
+Use script/generate extra_webrat_steps [language] to generate webrat_extra_steps.rb.
+If no [language] is given, the generator works as usual
