@@ -1,0 +1,80 @@
+# http://www.ietf.org/rfc/rfc4646.txt
+# http://www.ietf.org/rfc/rfc4647.txt
+# Others:
+# http://en.wikipedia.org/wiki/IETF_language_tag
+# http://www.iana.org/assignments/language-subtag-registry
+# http://ftp.ics.uci.edu/pub/ietf/http/related/iso639.txt (Use this I think)
+"en":
+  within: within
+# Please help us keeping the languages below uptodate. The parsers for a language
+# that is missing a keyword will expect the English word until the missing word(s)
+# are added.
+#
+# Please keep the grammars in alphabetical order from here and down.
+
+# Arabic
+"ar":
+  within: ضمن
+# Welsh
+"cy":
+  within: mewn
+# Danish
+"da":
+  within: inden i
+# German
+"de":
+  within: innerhalb
+# LOLCAT
+"en-lol":
+  none:
+# Texan
+"en-tx":
+  none:
+# Spanish
+"es":
+  within: dentro de
+# Estonian
+"et":
+  within: sees
+# French
+"fr":
+  within: au sein de
+# Malay
+"id":
+  none:
+# Italian
+"it":
+  within: entro
+# Japanese
+"ja":
+  within: 〜以内で
+# Lithuanian
+"lt":
+  within: viduje
+# Dutch
+"nl":
+  within: binnenin
+# Norwegian
+"no":
+  within: innen
+# Polish
+"pl":
+  within: wewnątrz
+# Portuguese
+"pt":
+  within: dentro
+# Romanian (without diacritics - the commonly used)
+"ro":
+  within: inauntru
+# Romanian (with diacritics - not commonly used)
+"ro2":
+  within: înăuntru
+# Russian
+"ru":
+  within: внутри
+# Swedish
+"se":
+  within: inom
+# Chinese simplified
+"zh-CN":
+  within: 内部

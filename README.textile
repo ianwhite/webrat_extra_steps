@@ -2,7 +2,7 @@ h1. Creates some extra handy webrat steps
 
 After you've run script/generate cucumber, do this:
   
-  script/generate extra_webrat_steps
+  script/generate extra_webrat_steps 
   
 h2. What does it do?
 
@@ -17,3 +17,18 @@ this:
   
 The generator parses your current webrat_steps.rb to create the steps, so if that file changes
 you might want to re-run the generator
+
+h3. Enhancement to support multiple languages
+
+It's asumed that the features directory looks as following:
+  
+    features
+      [language] (any other language cucumber supports)
+        step_definitions
+          *_steps.rb
+          webrat_steps.rb
+        *.feature
+      support
+        env.rb
+   
+Use script/generate extra_webrat_steps [language] to generate webrat_extra_steps.rb
