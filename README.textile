@@ -3,7 +3,7 @@ h1. Creates some extra handy webrat steps
 After you've run script/generate cucumber, do this:
   
   script/generate extra_webrat_steps 
-  
+
 h2. What does it do?
 
 Currently, it just creates dom scoped versions of the 'When' steps.
@@ -20,10 +20,10 @@ you might want to re-run the generator
 
 h3. Enhancement to support multiple languages
 
-Since Cucumber supports multiple languages, webrat_extra_steps should do so either.
-Added a file languages.yml containing the translations.
+Since Cucumber supports multiple languages, webrat_extra_steps should do so as well.  (The 
+currently supported languages are in rails_generators/extra_webrat_steps/tenplates/languages.yml)
 
-It's asumed that the features directory looks as following:
+It's assumed that the features directory looks as follows:
   
     features
       [language] (any language cucumber supports)
@@ -38,3 +38,11 @@ It's asumed that the features directory looks as following:
    
 Use script/generate extra_webrat_steps [language] to generate webrat_extra_steps.rb.
 If no [language] is given, the generator works as usual.
+
+h2. Contributors
+
+Author "Ian White":http://github.com/ianwhite
+  
+Contributions by
+
+ * "Kosmas Schuetz":http://github.com/kosmas58
