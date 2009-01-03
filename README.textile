@@ -25,16 +25,16 @@ currently supported languages are in rails_generators/extra_webrat_steps/tenplat
 
 It's assumed that the features directory looks as follows:
   
-    features
-      [language] (any language cucumber supports)
-        step_definitions
-          *_steps.rb
-          webrat_steps.rb
-        *.feature
-      [language] (multiple languages are supported)
-         *
-      support
-        env.rb
+    features/
+    +-- [language]/ (any language cucumber supports)
+    +-- step_definitions/
+         +-- *_steps.rb
+         +-- webrat_steps.rb
+    +-- *.feature
+    +-- [language]/ (multiple languages are supported)
+         +-- *
+    +-- support/
+         +-- env.rb
    
 Use script/generate extra_webrat_steps [language] to generate webrat_extra_steps.rb.
 If no [language] is given, the generator works as usual.
