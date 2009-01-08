@@ -78,3 +78,6 @@
 # Chinese simplified
 "zh-CN":
   within: 内部
+# Korean
+"ko":
+  within: 이내
