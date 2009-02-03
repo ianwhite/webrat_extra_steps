@@ -32,10 +32,10 @@ protected
     end
     
     # add scoped versions of 'I should see' steps
-    methods << "Then /^within: (.*?), I should see \"(.*)\"$/ do |scope, text|\n" +
+    methods << "Then /^#{@translations["within"]}: (.*?), I should see \"(.*)\"$/ do |scope, text|\n" +
                "  within(scope) {|s| s.dom.should contain(text)}\n" +
                "end"
-    methods << "Then /^within: (.*?), I should not see \"(.*)\"$/ do |scope, text|\n" +
+    methods << "Then /^#{@translations["within"]}: (.*?), I should not see \"(.*)\"$/ do |scope, text|\n" +
                "  within(scope) {|s| s.dom.should_not contain(text)}\n" +
                "end"
     methods
