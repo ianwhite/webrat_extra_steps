@@ -24,7 +24,7 @@ protected
     methods = []
     
     # remove 'visit path_to(page)' step as that doesn't make sense to be scoped
-    @original_webrat_steps.sub(/When*?\n\s*visit path_to\(page_name\)\nend\n/,'')
+    @original_webrat_steps.sub!(/When.*?\n\s*visit path_to\(page_name\)\nend\n/m,'')
     
     # create scoped method variants of all of the 'When' steps
     @original_webrat_steps.scan(/\nWhen \/\^(.*?)\$\/ do \|(.*?)\|\n\s+(.+?)\s*\nend\n/m) do
