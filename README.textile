@@ -1,4 +1,8 @@
-h1. Creates some extra handy webrat steps
+h1. NOTE: "This Gist":http://gist.github.com/239570 supercedes this plugin
+
+I am no longer supporting this plugin.  See the above link for a much better solution.
+
+h2. Creates some extra handy webrat steps
 
 After you've run script/generate cucumber, do this:
   
